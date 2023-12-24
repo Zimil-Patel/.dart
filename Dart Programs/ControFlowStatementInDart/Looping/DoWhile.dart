@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 void main() {
@@ -17,7 +16,6 @@ void main() {
         break;
       case 3:
         exit(0);
-        break;
 
       default:
         print("please enter valid choice");
