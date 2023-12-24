@@ -1,4 +1,6 @@
-main() {
+enum Days { Monday, Tuesday, Wednesday, Thurday, Friday, Saturday, Sunday }
+
+void main() {
   // not specified data type of variable
   var var1 = 25.5;
   var var2 = 50;
@@ -37,6 +39,11 @@ main() {
   print(">> Predefined data type (bool) : $isValid");
   print(">> Predefined data type (List) : $list2");
   print(">> Predefined data type (Map) : $map2");
+
+  print('\n>> Enum Data Type ${Days.values}');
+
+  print('\n >> using forEach : ');
+  Days.values.forEach((v) => print('values: $v, index: ${v.index}'));
 
   print("\n");
 }
