@@ -1,4 +1,5 @@
 //Arithmetic operators
+// +, -, *, %, /, ~/
 import 'dart:io';
 
 void main() {

@@ -17,4 +17,5 @@ void main() {
   print("b /= a so, b = ${b /= a}"); // '/='
   print("b *= a so, b = ${b *= a}"); // '*='
   print("b ~/= a so, b = ${b ~/= a}"); // '~/='
+  print("b %= a so, b = ${b %= a}"); // '%='
 }
