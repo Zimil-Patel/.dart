@@ -2,16 +2,16 @@
 import 'dart:io';
 
 void main() {
-  double n;
+  int n;
   int count = 0;
 
   stdout.write("Enter Number : ");
-  n = double.parse(stdin.readLineSync()!);
+  n = int.parse(stdin.readLineSync()!);
 
   while (n != 0) {
     count++;
-    n /= 10;
+    n ~/= 10;
   }
 
-  print("\nNumber of digit : $count\n\n");
+  print("\nNumber of digit : $count\n");
 }
