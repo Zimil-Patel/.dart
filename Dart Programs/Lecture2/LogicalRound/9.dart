@@ -19,3 +19,5 @@ void main() {
   else
     print("\nGiven number($num) is not prime\n");
 }
+
+
