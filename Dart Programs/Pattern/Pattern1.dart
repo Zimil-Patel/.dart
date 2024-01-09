@@ -2,15 +2,17 @@ import 'dart:io';
 
 void main() {
   int i = 1;
+  int temp;
 
-  for (i = (1 * (i - 1) ~/ 2) + 1; i <= 10; i++) {
+  for (i = 1; i <= 10; i++) {
+    temp = i;
     for (int k = 1; k < i; k++) stdout.write(" -  ");
 
     for (int j = i; j <= 10; j++) {
-      if (i <= 9)
-        stdout.write(" $i  ");
+      if (temp <= 9)
+        stdout.write(" ${temp++}  ");
       else
-        stdout.write("$i  ");
+        stdout.write("${temp++}  ");
     }
     print("");
   }
