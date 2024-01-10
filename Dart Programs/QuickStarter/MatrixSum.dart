@@ -1,4 +1,6 @@
-//23.Wap to addition of two matrices.
+/*
+Write a Dart program to addition of two matrices of dimension 3x3. 
+*/
 
 import 'dart:io';
 
