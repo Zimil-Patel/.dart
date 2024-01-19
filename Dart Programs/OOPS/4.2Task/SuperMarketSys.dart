@@ -51,8 +51,8 @@ class Market {
   static void getItemInAscendingOrder(List<Market> item) {
     print("> - - All Items Details in Ascending order - - - <");
 
-    for (int i = 0; i < item.length - 1; i++) {
-      for (int j = i + 1; j < item.length - 1; j++) {
+    for (int i = 0; i < item.length; i++) {
+      for (int j = i + 1; j < item.length; j++) {
         print(item[i].getItemNumber());
         if (item[i].getItemNumber()! > item[j].getItemNumber()!) {
           Market market = new Market();
@@ -71,7 +71,7 @@ class Market {
 
 void main() {
   List<Market> item = List.empty(growable: true);
-  Market market = Market();
+
   bool loginStatus = false;
 
   String? userName = "", password = "";
@@ -94,6 +94,7 @@ void main() {
       switch (Market.choice) {
         case 1:
           {
+            Market market = Market();
             market.setter();
             print("\n>> Added successfully <<\n");
             item.add(market);

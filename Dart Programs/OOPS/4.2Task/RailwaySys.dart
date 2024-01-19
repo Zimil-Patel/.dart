@@ -62,12 +62,12 @@ class Railway {
 void main() {
   Railway.getDash();
   List<Railway> train = List.empty(growable: true);
-  Railway railway = Railway();
 
   while (Railway.choice != 4) {
     switch (Railway.choice) {
       case 1:
         {
+          Railway railway = Railway();
           railway.setter();
           print("\n>> Added successfully <<\n");
           train.add(railway);
