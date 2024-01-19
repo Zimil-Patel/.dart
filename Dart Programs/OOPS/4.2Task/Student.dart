@@ -26,12 +26,20 @@ class Student {
 
 void main() {
   List studentList = List.empty(growable: true);
-  stdout.write(">> - - - Enter student Details - - - <<");
+  print("\n>> - - - Enter student Details - - - <<\n");
+
+  stdout.write(">> How many studnet you want to add : ");
   int n = int.parse(stdin.readLineSync()!);
+
   for (int i = 0; i < n; i++) {
     print("\n>> Student ${i + 1} : ");
     Student student = Student();
     student.setter();
     studentList.add(student);
   }
+
+  print("\n>> All student details are <<\n");
+  studentList.forEach((element) {
+    element.getter();
+  });
 }
