@@ -21,7 +21,7 @@ class Market {
     print("    3. exit");
     print("- - - - - - - - - - - - - - - - - \n");
 
-    stdout.write("Enter your choice[1/2/3/4] : ");
+    stdout.write("Enter your choice[1/2/3] : ");
     choice = int.parse(stdin.readLineSync()!);
   }
 
@@ -39,7 +39,7 @@ class Market {
   }
 
   getter() {
-    print("\nItem number :$itemNumber");
+    print("\nItem number : $itemNumber");
     print("Item name : $item_name");
     print("Item price : $price");
     print("Item discount : $discount");
@@ -50,18 +50,16 @@ class Market {
 
   static void getItemInAscendingOrder(List<Market> item) {
     print("> - - All Items Details in Ascending order - - - <");
-    int? current;
-    int? next;
 
     for (int i = 0; i < item.length - 1; i++) {
-      current = item[i].getItemNumber()!;
-      next = item[i + 1].getItemNumber()!;
-
-      if (current > next) {
-        Market market = new Market();
-        market = item[i];
-        item[i] = item[i + 1];
-        item[i + 1] = market;
+      for (int j = i + 1; j < item.length - 1; j++) {
+        print(item[i].getItemNumber());
+        if (item[i].getItemNumber()! > item[j].getItemNumber()!) {
+          Market market = new Market();
+          market = item[i];
+          item[i] = item[j];
+          item[j] = market;
+        }
       }
     }
 
