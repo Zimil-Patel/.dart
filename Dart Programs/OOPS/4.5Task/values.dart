@@ -10,7 +10,7 @@ class Values {
   }
 
   setValueofb() {
-    stdout.write("\nEnter value of b : ");
+    stdout.write("Enter value of b : ");
     this.b = int.parse(stdin.readLineSync()!);
   }
 
