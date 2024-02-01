@@ -10,6 +10,6 @@ void main() {
   try {
     print("Division of ${values.a} / ${values.b} : ${values.a ~/ values.b}");
   } on IntegerDivisionByZeroException {
-    print("\nYou can't divide ${values.a} by ${values.b}\n");
+    print("\nException : You can't divide ${values.a} by ${values.b}\n");
   }
 }
