@@ -8,8 +8,10 @@ void main() {
     ..setValueofb();
 
   try {
-    print("Division of ${values.a} / ${values.b} : ${values.a ~/ values.b}");
+    print(
+        "\nDivision of ${values.geta()} / ${values.getb()} : ${values.geta() ~/ values.getb()}");
   } on IntegerDivisionByZeroException {
-    print("\nException : You can't divide ${values.a} by ${values.b}\n");
+    print(
+        "\nException : You can't divide ${values.geta()} by ${values.getb()}\n");
   }
 }
