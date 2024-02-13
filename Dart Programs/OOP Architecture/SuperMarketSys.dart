@@ -18,16 +18,20 @@ class ProductData {
     int productQuantity = 0;
     Map map = {};
 
-    print("\n- - - - - - - - - -");
-    print("    Inverntory");
-    print("- - - - - - - - - -\n");
+    print("\n* * * * * * * * * * * * * * * * * * * * *");
+    print("*                Inverntory             *");
+    print("*                                       *");
 
     for (int i = 0; i < productList.length; i++) {
       print(
-          "Enter ${productList[i]['productId']} for ${productList[i]['productName']} - price(${productList[i]['price']})");
+          "*   Enter ${productList[i]['productId']} for ${productList[i]['productName']} - price(${productList[i]['price']})\t*");
     }
 
-    stdout.write("\nEnter your product choice : ");
+    print("*                                       *");
+    print("* * * * * * * * * * * * * * * * * * * * *\n");
+
+    print("\n- - - - - - - - - - - - - - - - - -");
+    stdout.write(">> Enter your product choice : ");
     productChoice = int.parse(stdin.readLineSync()!);
 
     if (productChoice <= 7 && productChoice > 0) {
@@ -37,6 +41,7 @@ class ProductData {
 
       stdout.write("Enter quantity : ");
       productQuantity = int.parse(stdin.readLineSync()!);
+      print("- - - - - - - - - - - - - - - - - -\n");
 
       map['quantity'] = productQuantity;
 
@@ -61,7 +66,8 @@ class ProductData {
     double discountAmt = 0;
     double discount = 0;
 
-    print("- - - - Customer cart detail - - - -");
+    print("\n- - - - Customer cart detail - - - -");
+
     for (int i = 0; i < list.length; i++) {
       finalAmt += ((list[i]['price'] as int) * (list[i]['quantity'] as int));
       print(
@@ -80,7 +86,7 @@ class ProductData {
     print(
         "\nFinal Amount : $finalAmt\nDiscount Amonut : $discountAmt ($discount%)\n");
 
-    print("- - - - - - - - - - - - - - - - - -");
+    print("# # # # # # # # # # # # # # # # # #");
   }
 }
 
@@ -90,12 +96,14 @@ class CustomerData extends ProductData {
   late String _customerContact;
 
   setter() {
-    stdout.write("Enter your id : ");
+    print("\n- - - - - - - - - - - - - - - - - -");
+    stdout.write(">> Enter customer id : ");
     _customerId = int.parse(stdin.readLineSync()!);
-    stdout.write("Enter your name : ");
+    stdout.write(">> Enter customer name : ");
     _customerName = stdin.readLineSync()!;
-    stdout.write("Enter your contact number : ");
+    stdout.write(">> Enter customer1 contact number : ");
     _customerContact = stdin.readLineSync()!;
+    print("- - - - - - - - - - - - - - - - - -\n");
   }
 
   getter() {
@@ -113,16 +121,20 @@ class SuperMarket extends CustomerData {
   static int getDash() {
     int choice;
 
-    print("\n- - - - - - - - - - - - - -");
-    print("1. for add new customer");
-    print("2. for all customer data");
-    print("3. for search customer data");
-    print("4. for exit");
-    print("- - - - - - - - - - - - - -\n");
+    print("\n* * * * * * * * * * * * * * * * * *");
+    print("*                                 *");
+    print("*   1. for add new customer       *");
+    print("*   2. for all customer data      *");
+    print("*   3. for search customer data   *");
+    print("*   4. for exit                   *");
+    print("*                                 *");
+    print("* * * * * * * * * * * * * * * * * *\n");
 
     //geeting user choice
+    print("\n- - - - - - - - - - - - - - - - - -");
     stdout.write(">> Enter your choice : ");
     choice = int.parse(stdin.readLineSync()!);
+    print("- - - - - - - - - - - - - - - - - -");
 
     return choice;
   }
@@ -154,6 +166,8 @@ void main() {
         break;
 
       case 2:
+        print("\n# # # # # # # # # # # # # # # # # #");
+
         for (int i = 0; i < customerList.length; i++) {
           customerList[i]['customerInfo'].getter();
           ProductData.getCartData(customerList[i]['cartData']);
@@ -163,9 +177,11 @@ void main() {
       case 3:
         int searchId;
         bool found = false;
-        print("\n- - - - - - - - - - - - - - -");
-        stdout.write("Enter cutomer id for search data : ");
+
+        print("\n- - - - - - - - - - - - - - - - - -");
+        stdout.write(">> Enter cutomer id for search data : ");
         searchId = int.parse(stdin.readLineSync()!);
+        print("- - - - - - - - - - - - - - - - - -");
 
         for (int i = 0; i < customerList.length; i++) {
           if (searchId == customerList[i]['customerInfo'].getId()) {
@@ -176,7 +192,9 @@ void main() {
         }
 
         if (!found) {
-          print("\nNo records found!\n");
+          print("\n- - - - - - - - - - - - - - - - - -");
+          print("        No records found!");
+          print("- - - - - - - - - - - - - - - - - -\n");
         }
         break;
 
