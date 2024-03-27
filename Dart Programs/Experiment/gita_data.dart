@@ -225,7 +225,6 @@ List data = [
         'name': 'सांख्ययोग',
         'shloks': [
           {
-            'no': 1,
             'shlok': '',
             'meaning': '',
           },
@@ -237,7 +236,6 @@ List data = [
         'name': 'कर्मयोग',
         'shloks': [
           {
-            'no': 1,
             'shlok': '',
             'meaning': '',
           },
@@ -4085,7 +4083,7 @@ List data = [
   }
 ];
 
-int chapterIndex = 3;
+int chapterIndex = 17;
 
 void main() {
   //print(data[0]['chapters'].length); //print how many chapters and it name are there
