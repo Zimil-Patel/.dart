@@ -225,6 +225,7 @@ List data = [
         'name': 'सांख्ययोग',
         'shloks': [
           {
+            'no': 1,
             'shlok': '',
             'meaning': '',
           },
@@ -236,6 +237,7 @@ List data = [
         'name': 'कर्मयोग',
         'shloks': [
           {
+            'no': 1,
             'shlok': '',
             'meaning': '',
           },
