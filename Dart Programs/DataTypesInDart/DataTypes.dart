@@ -1,5 +1,4 @@
 enum Days { Monday, Tuesday, Wednesday, Thurday, Friday, Saturday, Sunday }
-
 void main() {
   // not specified data type of variable
   var var1 = 25.5;
