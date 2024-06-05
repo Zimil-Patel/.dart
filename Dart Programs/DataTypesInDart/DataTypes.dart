@@ -23,7 +23,6 @@ void main() {
   print(">> Infered by dart compiler : $laugh");
 
   print("\n- - - Data types are specified - - -\n");
-
   //Number - int, double
   int num1 = 50;
   double pi = 3.14;
