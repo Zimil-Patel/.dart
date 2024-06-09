@@ -1,4 +1,4 @@
-List json_list = [
+List json_list_users = [
   {
     "id": 1,
     "name": "Leanne Graham",

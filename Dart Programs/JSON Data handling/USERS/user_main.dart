@@ -3,8 +3,8 @@ import 'user_model.dart';
 
 void main() {
   UserModel userModel;
-  for (int i = 0; i < json_list.length; i++) {
-    userModel = UserModel.getFromJson(json_list[i]);
+  for (int i = 0; i < json_list_users.length; i++) {
+    userModel = UserModel.getFromJson(json_list_users[i]);
 
     print('-----------------------------');
     print('id: ${userModel.id}');
