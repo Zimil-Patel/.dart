@@ -10,7 +10,7 @@ void main() {
     print('title: ${bookModel.title}');
     print('author: ${bookModel.author}');
     print('publication_year: ${bookModel.publication_year}');
-    print('genres: ${bookModel.genres}');
+    print('genres: ${bookModel.genres.join(', ')}');
     print('available: ${bookModel.available}');
   }
 }
