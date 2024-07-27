@@ -5,6 +5,7 @@ class AgeCalculator {
   int currentMonth = 1;
   int currentYear = 2024;
 
+  
   bool validateAge(int birthDate, int birthMonth, int birthYear) {
     //validate year
     if (birthYear >= 1924 && birthYear <= 2024) {
