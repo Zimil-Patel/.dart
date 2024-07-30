@@ -1,5 +1,4 @@
 import 'dart:io';
-
 class ProductData {
   List productList = [
     {'productId': 1, "productName": "Milk", "price": 250, 'quantity': 0},
