@@ -10,6 +10,7 @@ class ProductData {
     {'productId': 7, "productName": "Coffee", "price": 580, 'quantity': 0},
   ];
 
+  
   List customerCart = [];
 
   List showInventory() {
