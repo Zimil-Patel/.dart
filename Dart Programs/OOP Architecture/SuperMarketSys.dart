@@ -26,7 +26,6 @@ class ProductData {
       print(
           "*   Enter ${productList[i]['productId']} for ${productList[i]['productName']} - price(${productList[i]['price']})\t*");
     }
-
     print("*                                       *");
     print("* * * * * * * * * * * * * * * * * * * * *\n");
 
