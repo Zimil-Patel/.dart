@@ -1,5 +1,6 @@
 ### JSON and JSON Parsing in Dart
 
+
 **JSON (JavaScript Object Notation)** is a lightweight data-interchange format that's easy for humans to read and write, and easy for machines to parse and generate. In Dart, you can use the `dart:convert` library to handle JSON data, converting between Dart objects and JSON strings.
 
 **Parsing JSON in Dart** involves decoding a JSON string into a Dart map or list and then using the data as needed. You can create models to represent the structure of your JSON data and use factory constructors to convert the JSON data into these models.
